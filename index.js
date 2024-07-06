@@ -10,7 +10,12 @@ const app = express();
 
 app.use(express.json());
 
+const corsOption = {
+    origin:"main--referandearnproject.netlify.app",
+    credentials:true
+}
 
+app.use(cors(corsOption));
 
 app.use("/api/v1/form",formRoute);
 
