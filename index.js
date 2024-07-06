@@ -9,8 +9,14 @@ const app = express();
 // const formRoute = require('./routes/FormRoutes');
 
 
+app.use(express.json());
 
-app.use(cors(corsOption));
+// const corsOption = {
+//     origin:"https://main--referandearnproject.netlify.app",
+//     credentials:true
+// }
+// app.use(cors(corsOption));
+// 
 
 app.use("/api/v1/form",formRoute);
 
