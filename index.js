@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 const corsOption = {
-    origin:"main--referandearnproject.netlify.app",
+    origin:"https://main--referandearnproject.netlify.app",
     credentials:true
 }
 
